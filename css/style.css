@@ -99,6 +99,22 @@ p.byline {
     padding:0;
     z-index:-2;
 }
+.opener-story {
+    background-position:50% 90%; 
+    background-repeat:no-repeat; 
+    background-size:cover;
+    background-color: black;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-attachment:absolute;
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    padding:0;
+    z-index:-2;
+}
 
 .vid-opener {
     background-position:50% 90%; 
@@ -117,19 +133,10 @@ p.byline {
 }
 
 .opener1 {
-    background-image:url('../img/part1main.jpg');
+    background-image:url('../img/titlecomposit.jpg');
     margin:0 0 5em;
 }
-.opener2 {
-    background-image:url('../img/part2main.jpg');
-    height:101%;
-    margin:10em 0 5em;
-}
-.opener3 {
-    background-image:url('../img/part3main.jpg');
-    height:101%;
-    margin:10em 0 5em;
-}
+
 .clear {
     width:100%;
     height:0;
@@ -167,6 +174,42 @@ p.byline {
     font-family:'Open Sans', Helvetica, Arial, sans-serif !important;
     color:#FFFFFF;
 }
+
+
+.bottom-bar, .bottom-bar-section ul, .bottom-bar-section ul li, .bottom-bar-section li:not(.has-form) a:not(.button) {
+    background:#000;
+}
+.bottom-bar-section>ul>.divider, .top-bar-section>ul>[role="separator"] {
+    border-right:solid 1px #353535;
+}
+.bottom-bar-section ul li.bottom a {
+    padding:.5em .8em;
+}
+.bottom-size-bar-section ul li a {
+    font-family:'Open Sans', Helvetica, Arial, sans-serif !important;
+    text-transform:none;
+    font-weight:400;
+    font-size:1em;
+}
+.bottom-bar-section ul li.top-top > a {
+    text-transform:uppercase;
+    font-size:.9em;
+}
+.bottom-bar-section ul li.social a {
+    padding:0 .5em;
+}
+.bottom-bar-section ul li.social.firstsocial {
+    padding-left:1em;
+}
+.bottom-bar-section ul li.social a:last-child {
+    padding-right:1em;
+}
+.bottom-bar .toggle-topbar.menu-icon a span {
+    font-family:'Open Sans', Helvetica, Arial, sans-serif !important;
+    color:#FFFFFF;
+}
+
+
 .opener div#title, .opener div.title-below {
     position:fixed;
     z-index:-1;
@@ -331,7 +374,7 @@ a:hover, * a:hover, a:hover * {
 }
 .photorow {
     margin:2em 0 4em;
-    padding:0;
+    padding:2em;
     width:100%;
 }
 .twinphoto .photoleft {
@@ -624,6 +667,11 @@ div#footer-bar ul.social li {
     .top-bar-section ul li.social.firstsocial {
         padding-left:0;
     }
+
+    .bottom-bar-section ul li.social a {
+        padding:1em 40%;
+    }
+
     .opener div#title, .opener div.title-below {
         width:65%;
     }
