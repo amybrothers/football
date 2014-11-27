@@ -92,6 +92,11 @@ div.darkback {
     color:#f5f5f5;
 }
 
+.darkback_vid{
+    padding:5em 0;
+    height:97%;
+}
+
 .opener-story {
     background-position:center center; 
     background-repeat:no-repeat; 
@@ -318,11 +323,23 @@ h3.storytitle {
     font-weight:700;
     display:block;
     text-align:center;
-    margin:1.5em auto 1.5em;
+    margin: 0 auto 0;
+    padding:.5em 0;
+    width:70%;
+}
+
+h4.storytitle_sub {
+    font-family:'Merriweather', Georgia, Times, serif;
+    font-size:2em;
+    font-weight:400;
+    display:block;
+    text-align:center;
+    margin:0 auto 1.5em;
     padding:.5em 0;
     width:70%;
     border-bottom:1px solid rgba(0,0,0,.3);
 }
+
 p.lead {
   	font-size:1.15em;
   	line-height:1.7;
@@ -438,7 +455,7 @@ p.splainer {
 .play_icon {
     width:12%;
     position:absolute;
-    top:50%;
+    top:55%;
     right:45%;
     pointer-events:none;
 }
@@ -541,26 +558,39 @@ div#footer-bar ul.social li {
         top: 40%;
     }
 
-    .centergallery button span {
-        font-size:1.25em;
-        margin:0 .5em;
-        text-shadow:none;
-        transform:scale(1,3);
-        -webkit-transform:scale(1,3);
-        -moz-transform:scale(1,3);
-        -ms-transform:scale(1,3);
-        -o-transform:scale(1,3);
+    .darkback_vid{
+        padding:4em 0;
+        height:97%;
     }
+
      div#title h2.subtitle, div.title-below h2.subtitle {
         visibility: hidden;
     }
 }
+
+@media (max-width:600px) {
+    .play_icon {
+        width: 15%;
+        top: 57%;
+    }
+
+    .darkback_vid{
+        padding:4em 0;
+        height:97%;
+    }
+}
+
 @media (max-width:540px) {
     .opener2, .opener3 {
         margin:5em 0 2.5em;
     }
     h3.storytitle {
         font-size:1.5em;
+        margin:.5em auto .5em;
+        width:80%;
+    }
+     h4.storytitle_sub {
+        font-size:1em;
         margin:.5em auto 1.5em;
         width:80%;
     }
@@ -583,22 +613,7 @@ div#footer-bar ul.social li {
     .twinphoto .photoright .caption {
         padding:0;
     }
-    #thecharts a {
-        font-size:1.1em;
-    }
-    #chart_pad {
-        padding-bottom:85%;
-    }
-    .d3-tip h3 {
-        font-size:1.3em;
-    }
-    #legend ul.list-inline {
-        margin:.5em 5% 0;
-    }
-    #legend li.key {
-        font-size: .7em;
-        line-height:1.1;
-    }
+
     .caption {
         font-size:.85em;
         line-height:1.35;
@@ -609,7 +624,7 @@ div#footer-bar ul.social li {
     }
      .play_icon {
         width: 15%;
-        top: 60%;
+        top: 63%;
     }
 }
 @media (max-width:540px) and (orientation:landscape) {
@@ -629,5 +644,9 @@ div#footer-bar ul.social li {
       .play_icon {
         width: 15%;
         top: 30%;
+    }
+     .darkback_vid{
+        padding: 0;
+        height:97%;
     }
 }
