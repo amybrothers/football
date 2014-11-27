@@ -30,7 +30,7 @@
 	<meta name="twitter:card" value="summary" />
 	<meta name="twitter:url" value="http://www.denverpost.com/everythingmatters/index.html" />
 	<meta name="twitter:title" value="Everything Matters: Adam City football" />
-	<meta name="twitter:description" value=" A season spent with the Adam City football team revealed the power sports can have on a group of kids trying to change their fate" />
+	<meta name="twitter:description" value="A season spent with the Adam City football team revealed the power sports can have on a group of kids trying to change their fate" />
 	<meta name="twitter:image" value="http://extras.denverpost.com/everthingmatters/img/homeless-school-child-promo.png" />
 	<meta name="twitter:site" value="@denverpost" />
 	<meta name="twitter:domain" value="denverpost.com" />
@@ -48,7 +48,7 @@
 	<meta property="og:url" content="http://extras.denverpost.com/everythingmatters/index.html" />
 	<meta property="og:image" content="http://extras.denverpost.com/everythingmatter/img/homeless-school-child-promo.png" />
 	<meta property="og:site_name" content="The Denver Post" />
-	<meta property="og:description" content=" A season spent with the Adam City football team revealed the power sports can have on a group of kids trying to change their fate" />
+	<meta property="og:description" content="A season spent with the Adam City football team revealed the power sports can have on a group of kids trying to change their fate" />
 	<meta property="article:publisher" content="https://www.facebook.com/denverpost" />
 	
 	<link href='http://fonts.googleapis.com/css?family=Merriweather:400italic,400,700|Open+Sans:300,400,600,700,800|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
@@ -66,7 +66,7 @@
     <script type="text/javascript">
         s.trackExternalLinks = false
         s.pageName = document.title
-        s.channel = "Everything Matters "
+        s.channel = "Everything Matters"
         s.prop1 = "D=g"
         s.prop2 = "Everything Matters/?"
         s.prop3 = "Everything Matters/?/?"
@@ -85,6 +85,8 @@
 		</ul>
 		<section class="top-bar-section">
 			<ul class="right">
+				<li class="divider removeOnVid"></li>
+				<li class="top-top removeOnVid"><a href="javascript:void(0);" id="mute"><img id="mute_img" src="./img/sound.png" /></a></li>
 				<li class="divider"></li>
 				<li class="top-top"><a href="./index.html">Watch Film</a></li>
 				<li class="divider"></li>
@@ -105,13 +107,13 @@
 <div class="vid-embed-wrap vid-opener">
 		<div class="vid-height-space"></div>
 		<div id="ooyalaplayer" class="vid-embed">
-			<video preload="auto" autoplay loop="">Your browser does not support this video.
+			<video preload="auto" id="background_audio" autoplay loop="">Your browser does not support this video.
 				<source src="./video/achomepage.mp4.mp4" type="video/mp4">
 				<source src="./video/achomepag.oggtheora.ogv" type="video/ogg">
 				<source src="./video/achomepag.webmhd.webm" type="video/webm">
 			</video>
 			<div class="clear"></div>
-			<div id="title" onclick="javascript:OO.Player.create('ooyalaplayer', '9wbDBwcToX6cC_VcoWQ1VrGLMTqDxlDz', {'autoplay':true})">
+			<div id="title" onclick="javascript:removeMuter();">
 				<h1 class="title">EVERYTHING MATTERS</h1>
 				<h2 class="subtitle">At Adams City High School, where football has long been an afterthought, <br> A passionate coach showed a group of kids where belief could carry them &mdash; on and off the field</h2>
 				<img class="play_icon" src="./img/icon-pressplay.png">
