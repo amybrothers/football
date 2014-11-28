@@ -97,7 +97,27 @@ div.darkback {
     height:97%;
 }
 
+.darkback_intro{
+    padding:5em 0;
+    height:100%;
+}
+
 .opener-story {
+    background-position:center center; 
+    background-repeat:no-repeat; 
+    background-color: black;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    padding:0;
+    z-index:10;
+}
+
+.opener-intro {
     background-position:center center; 
     background-repeat:no-repeat; 
     background-color: black;
@@ -132,6 +152,10 @@ div.darkback {
 .opener1 {
     background-image:url('../img/titlecomposit.jpg');
     margin:0 0 5em;
+}
+.opener2 {
+    background-image:url('../img/intro_img.jpg');
+    margin:0 0 2em;
 }
 
 .clear {
@@ -172,22 +196,19 @@ div.darkback {
     color:#FFFFFF;
 }
 
-.bottom-bar, .bottom-bar-section ul:not(.has-form)  ul, a:not(.button) {
-    background:#000;
-     font-family:'Open Sans', Helvetica, Arial, sans-serif !important;
-    font-weight:300;
-    font-size:1em;
-    color:#FFFFFF;
-    text-transform:uppercase;  
+.links{
+    position:center;
 }
 
 .opener div#title, .opener div.title-below {
-    position:fixed;
+    position:center;
     z-index:50;
     top:0;
     left:0;
     width:100%;
     height:100%;
+    text-transform:uppercase;
+    font-size:.9em;
 }
 
 .vid-opener div#title, .vid-opener div.title-below {
@@ -339,6 +360,7 @@ h4.storytitle_sub {
     width:70%;
     border-bottom:1px solid rgba(0,0,0,.3);
 }
+
 
 p.lead {
   	font-size:1.15em;
@@ -649,4 +671,7 @@ div#footer-bar ul.social li {
         padding: 0;
         height:97%;
     }
+    .darkback_intro {
+        padding: 0;
+
 }
