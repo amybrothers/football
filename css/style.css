@@ -12,6 +12,7 @@ body {
     background:#222;
     overflow:hidden;
     display:none;
+    z-index:500;
 }
 #adwrapper a.boxclose {
     position:fixed;
@@ -29,7 +30,7 @@ body {
     display:none;
     line-height:0px;
     padding:14px 6px;
-    z-index:50000;
+    z-index:500000;
     text-decoration:none;
     cursor:pointer;
 }
@@ -73,6 +74,11 @@ p.byline {
     font-size:.9em;
     margin-bottom:4em;
 }
+p.bylinebottom {
+    text-align:center;
+    font-size:.9em;
+    margin-top:1em;
+}
 #logoimg {
     margin:.0;
     height:1.8em;
@@ -93,8 +99,9 @@ div.darkback {
 }
 
 .darkback_vid{
-    padding:5em 0;
-    height:97%;
+    clear:both;
+    display:block;
+    margin-bottom:3em;
 }
 
 .darkback_intro{
@@ -341,9 +348,10 @@ h3.storytitle {
     font-weight:700;
     display:block;
     text-align:center;
-    margin: 0 auto 0;
-    padding:.5em 0;
+    margin: .5em auto 1em;
+    padding:.25em 0;
     width:70%;
+    border-bottom:1px solid rgba(0,0,0,.3);
 }
 
 h4.storytitle_sub {
@@ -385,20 +393,20 @@ a:hover, * a:hover, a:hover * {
 }
 
 .twinphoto{
-    margin-top:2em;
-    margin-bottom:2em;
+    margin-top:3em;
+    margin-bottom:6em;
 }
 
 .twinphoto .photoleft {
     width:50%;
     float:left;
-    padding-right:.75em;
+    padding:0 .75em;
     display:inline-block;
 }
 .twinphoto .photoright {
     width:50%;
     float:right;
-    padding-left:.75em;
+    padding:0 .75em;
     display:inline-block;
 }
 .twinphoto .photoleft .caption {
@@ -487,6 +495,7 @@ p.splainer {
 div#footer-bar {
     background:black;
     padding:.6em 0 .6em 1.6em;
+    margin-top:5em;
 }
 div#footer-bar ul.social {
     margin:0 auto;
@@ -582,12 +591,6 @@ div#footer-bar ul.social li {
         width: 15%;
         top: 40%;
     }
-
-    .darkback_vid{
-        padding:4em 0;
-        height:97%;
-    }
-
      div#title h2.subtitle, div.title-below h2.subtitle {
         visibility: hidden;
     }
@@ -597,11 +600,6 @@ div#footer-bar ul.social li {
     .play_icon {
         width: 15%;
         top: 57%;
-    }
-
-    .darkback_vid{
-        padding:4em 0;
-        height:97%;
     }
 }
 
@@ -669,10 +667,6 @@ div#footer-bar ul.social li {
       .play_icon {
         width: 15%;
         top: 30%;
-    }
-     .darkback_vid{
-        padding: 0;
-        height:97%;
     }
     .darkback_intro {
         padding: 0;
