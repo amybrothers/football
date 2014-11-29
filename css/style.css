@@ -150,13 +150,10 @@ div.darkback {
 }
 
 .opener1 {
-    background-image:url('../img/titlecomposit.jpg');
+    background-image:url('../img/storyinstagrams/collage.jpg');
     margin:0 0 5em;
 }
-.opener2 {
-    background-image:url('../img/intro_img.jpg');
-    margin:0 0 2em;
-}
+
 
 .clear {
     width:100%;
@@ -386,6 +383,12 @@ a:hover, * a:hover, a:hover * {
     padding:2em;
     width:100%;
 }
+
+.twinphoto{
+    margin-top:2em;
+    margin-bottom:2em;
+}
+
 .twinphoto .photoleft {
     width:50%;
     float:left;
