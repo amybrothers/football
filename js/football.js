@@ -53,6 +53,12 @@ function muteAudio() {
     }
 }
 
+$(document).keyup(function(e) {
+    if (!moreAd && e.keyCode == 27) {
+        hideAdManual();
+    }    
+});
+
 $('.top-top').click(function(evt) {
     $('.toggle-topbar').click();
 });
@@ -80,25 +86,6 @@ $(window).scroll(function() {
     }
 });
 
-$(document).ready(function() {
-    $('.centergallery').slick({
-        centerMode: true,
-        centerPadding: '20%',
-        slidesToShow: 1,
-        prevArrow: '<button type="button" class="slick-prev"><span>&lt;</span></button>',
-        nextArrow: '<button type="button" class="slick-next"><span>&gt;</span></button>',
-        responsive: [{
-            breakpoint: 800,
-            settings: {
-                arrows: true,
-                centerMode: true,
-                centerPadding: '8%',
-                slidesToShow: 1
-            }
-        }]
-    });
-});
-
 function hideAdManual() {
     $('#adwrapper').fadeOut(200);
     $('a.boxclose').css('display', 'none');
@@ -116,7 +103,6 @@ function showAd() {
         $('#footer-bar').css('margin-bottom',adH);
     }
 }
-
 
 document.getElementById('mute').addEventListener('click', function () {
     muteAudio();

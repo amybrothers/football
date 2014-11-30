@@ -649,6 +649,9 @@ div#footer-bar ul.social li {
         width: 15%;
         top: 63%;
     }
+    video::-webkit-media-controls {
+        display:none !important;
+    }
 }
 @media (max-width:540px) and (orientation:landscape) {
     .opener div#title, .opener div.title-below {
