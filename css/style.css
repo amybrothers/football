@@ -140,14 +140,13 @@ div.darkback {
 }
 
 .vid-opener {
-    background-position:center; 
+    background-position:center center; 
     background-repeat:no-repeat; 
     background-size:cover;
     background-color: black;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
-    background-attachment:absolute;
     width:100%;
     height:auto;
     overflow:hidden;
@@ -242,7 +241,7 @@ div#title h1.title, div.title-below h1.title {
 }
 div#title h2.subtitle, div.title-below h2.subtitle {
     width:100%;
-    margin:0 0 %;
+    margin:0 auto;
     font-family:'Open Sans Condensed', Helvetica, Arial, sans-serif !important;
     font-size:2em;
     font-weight:300;
@@ -290,7 +289,7 @@ p, .row li, .reveal-modal li {
 #credits p strong a:hover {
     color:SteelBlue;
 }
-#credits .row .columns p:first {
+#credits .row .columns p:first-child {
     margin-top:.1em;
 }
 .reverse h1 {
@@ -519,9 +518,6 @@ div#footer-bar ul.social li {
         font-weight:300;
         color:#fff;
     }
-    .vid-opener {
-        height: 
-    }
     .top-bar-section ul li.social a {
         padding:1em 40%;
     }
@@ -533,7 +529,6 @@ div#footer-bar ul.social li {
     .bottom-bar-section ul li.social a {
         padding:1em 40%;
     }
-
     .opener div#title, .opener div.title-below {
         width:65%;
     }
@@ -628,7 +623,6 @@ div#footer-bar ul.social li {
     .twinphoto .photoright .caption {
         padding:0;
     }
-
     .caption {
         font-size:.85em;
         line-height:1.35;
@@ -665,5 +659,5 @@ div#footer-bar ul.social li {
     }
     .darkback_intro {
         padding: 0;
-
+    }
 }
