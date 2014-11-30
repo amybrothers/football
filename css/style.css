@@ -407,12 +407,12 @@ a:hover, * a:hover, a:hover * {
     display:inline-block;
 }
 .twinphoto .photoleft .caption {
-    padding-left:1em;
-    max-width:900px;
+    padding-left:.5em;
+    max-width:50em;
 }
 .twinphoto .photoright .caption {
     padding-right:1em;
-    max-width:900px;
+    max-width:50em;
 }
 .twinphoto .photoright img,
 .twinphoto .photoleft img,
