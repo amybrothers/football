@@ -189,9 +189,6 @@ div.darkback {
 .top-bar-section ul li.social a {
     padding:0 .5em;
 }
-.top-bar-section ul li.social.firstsocial {
-    padding-left:1em;
-}
 .top-bar-section ul li.social a:last-child {
     padding-right:1em;
 }
@@ -533,11 +530,6 @@ div#footer-bar ul.social li {
         float:left;
         width:25%;
     }
-
-    .top-bar-section ul li.social.firstsocial {
-        padding-left:0;
-    }
-
     .bottom-bar-section ul li.social a {
         padding:1em 40%;
     }
