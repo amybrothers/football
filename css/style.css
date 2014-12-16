@@ -506,6 +506,14 @@ div#footer-bar ul.social li {
     float:left;
     display:inline-block;
 }
+
+#videoAAron .vid-embed {
+    background-image:url('../img/aaroninterview.jpg');
+}
+#videoDan .vid-embed {
+    background-image:url('../img/daninterveiw.jpg');
+}
+
 @media (max-width:940px) {
     #logoimg {
         height:1.3em;
