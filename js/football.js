@@ -34,12 +34,27 @@ function isVisible(element) {
     }
 }
 
+function playerCreator(embedId, playerId, divId) {
+    divId = typeof divId !== 'undefined' ? divId : false;
+    if (divId) {
+        $(divId).animate({backgroundColor:'rgba(0,70,70,0.3)',paddingLeft:'.5em',paddingRight:'.5em'}, 350).delay(2000).animate({backgroundColor:'transparent',paddingLeft:'0',paddingRight:'0'},1000);
+    }
+    $('#' + embedId).html('<iframe src="http://launch.newsinc.com/?type=VideoPlayer/Single&widgetId=1&trackingGroup=90115&siteSection=denverpost&playlistId=18572&videoId=' + playerId + '" class="informvideo" noscroll style="width:100%; height:100%;" frameborder="no" scrolling="no" noresize></iframe>');
+    $('#' + embedId).css('cursor','default');
+}
+
 function removeMuter() {
     $('.removeOnVid').each( function() {
         $(this).remove();
     });
-    OO.Player.create('ooyalaplayer', '9wbDBwcToX6cC_VcoWQ1VrGLMTqDxlDz', {'autoplay':true});
+    playerCreator('mainvideo', '30136714');
 }
+
+$(document).on('close.fndtn.reveal', '[data-reveal]', function(){
+    $('.reveal-modal iframe.informvideo').each(function(){
+        $(this).remove();
+    });
+});
 
 function muteAudio() {
     var audio = document.getElementById('background_audio');
